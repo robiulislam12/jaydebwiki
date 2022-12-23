@@ -35,7 +35,7 @@ h6 {
   max-width: 1300px;
   width: 100%;
   margin: 0 auto;
-  padding: 0px 30px;
+  padding: 0px 20px;
 }
 .grid-image {
   background: #ffffff;
@@ -239,6 +239,57 @@ a.active {
   left: -50px;
   transform: rotate(90deg);
   height: 5px;
+}
+
+/*--------------------------------------------
+            Everything OGBC page
+----------------------------------------------*/
+.everything-ogbc-bg{
+  background-image: url("../images/ogbc.png");
+  background-position: bottom center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 140px 0;
+}
+.everything-ogbc .hero-section .primary-heading {
+  font-size: 82px;
+}
+.everything-ogbc .hero-section .secondary-heading {
+  color: #ffffff;
+  line-height: 70px;
+  font-size: 36px;
+}
+.everything-ogbc .hero-section .body-text {
+  color: #ffffffb2;
+  padding-left: 600px;
+}
+.everything-ogbc .unlock-section{
+  background-image: url('../images/discover-img.png');
+  padding: 60px 0;
+}
+.list{
+  padding-left: 40px;
+}
+.list li{
+  list-style: disc;
+}
+.inclusive-financial {
+  padding: 120px 0;
+  background-color: #efefef;
+  text-align: center;
+  background-image: url("../images/inclusive.png");
+  background-position: bottom center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.inclusive-financial .body-text{
+  color: #111111;
+}
+.culture-acceptance{
+  padding: 70px 0px;
+}
+.financial-courses{
+  padding-bottom: 70px;
 }
 
 /*--------------------------------------------

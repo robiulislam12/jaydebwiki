@@ -53,6 +53,20 @@
     order: -1;
   }
 
+    /* =======================================
+            Everything OGBC page
+    ======================================== */
+    .everything-ogbc .financial-courses .grid-image{
+      order: -1;
+    }
+    .everything-ogbc .hero-section .body-text {
+      padding-left: 0px;
+    }
+    .everything-ogbc .hero-section .primary-heading {
+      font-size: 52px;
+      line-height: 90px;
+    }
+
   /* ====================================
            Contact Page
     ======================================= */
@@ -155,6 +169,28 @@
   .unlock-section-content .secondary-heading {
     padding-right: 0px;
     font-size: 36px;
+  }
+
+  /* =======================================
+            Everything OGBC page
+    ======================================== */
+  .everything-ogbc-bg {
+    padding: 120px 0;
+  }
+  .everything-ogbc .hero-section .primary-heading {
+    font-size: 52px;
+    line-height: 60px;
+  }
+  .everything-ogbc .hero-section .secondary-heading {
+    line-height: 40px;
+    font-size: 26px;
+  }
+  .everything-ogbc .hero-section .body-text {
+    padding-left: 0px;
+  }
+
+  .everything-ogbc .financial-courses .grid-image{
+    order: -1;
   }
 
   /* =======================================
