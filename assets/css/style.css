@@ -35,6 +35,12 @@ h6 {
   max-width: 1300px;
   width: 100%;
   margin: 0 auto;
+  padding: 0px 30px;
+}
+.grid-image {
+  background: #ffffff;
+  box-shadow: 0px 4px 20px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
 }
 
 .primary-color {
@@ -118,6 +124,22 @@ h6 {
   background-color: #410000;
   text-align: right;
 }
+.border-line {
+  width: 100px;
+  height: 3px;
+  background: #d21e2b;
+  border-radius: 2px;
+  margin: 20px 0;
+}
+.grid {
+  display: grid;
+  gap: 100px;
+  align-items: center;
+}
+.grid-cols-2 {
+  grid-template-columns: 1fr 1fr;
+}
+
 /*--------------------------------------------
             Header section
 ----------------------------------------------*/
@@ -149,6 +171,75 @@ a.active {
 /*--------------------------------------------
             Home page
 ----------------------------------------------*/
+/*--------------------------------------------
+            Products page
+----------------------------------------------*/
+.sustainability-bg {
+  background-image: url("/assets/images/sustainbility.png");
+  background-position: bottom center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 170px 0;
+}
+.sustainability .hero-section .secondary-heading {
+  color: #ffffff;
+  line-height: 70px;
+}
+.sustainability .hero-section .body-text {
+  color: #ffffffb2;
+  padding-left: 630px;
+}
+.our-communities,
+.our-path,
+.responsible-banking {
+  padding: 70px 0;
+}
+.banking-practice {
+  width: 900px;
+  margin: 0 auto;
+}
+.responsible-banking-practice {
+  padding: 120px 0;
+  background-color: #efefef;
+  text-align: center;
+  background-image: url("../images/responsible-banking-practice.png");
+  background-position: bottom center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.banking-practice .border-line {
+  margin: 10px auto;
+}
+.responsible-banking-practice .secondary-heading {
+  color: #111111;
+}
+.responsible-banking-practice .body-text {
+  color: #1f1f1f;
+  margin-top: 30px;
+}
+
+.unlock-section {
+  background-color: #f8f8f8;
+  padding: 120px 0;
+  background-image: url("../images/unclock.png");
+  background-position: bottom center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.unlock-section-content .secondary-heading {
+  padding-right: 150px;
+  font-size: 46px;
+  line-height: 50px;
+  padding-left: 30px;
+}
+
+.unlock-section-content .border-line {
+  position: absolute;
+  top: 40%;
+  left: -50px;
+  transform: rotate(90deg);
+  height: 5px;
+}
 
 /*--------------------------------------------
             Contact page

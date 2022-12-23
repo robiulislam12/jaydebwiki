@@ -1,10 +1,24 @@
 /* Tablet Responsive */
-@media only screen and (max-width: 1024px) {
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
   /* ====================================
             common css
     ======================================= */
   .container {
-    width: 95%;
+    width: 90%;
+    padding: 0;
+  }
+  img {
+    width: 100%;
+  }
+  .primary-heading {
+    font-size: 56px;
+    line-height: 40px;
+  }
+  .secondary-heading {
+    font-size: 34px;
+  }
+  .grid-cols-2 {
+    grid-template-columns: 1fr;
   }
   /* ====================================
            Header section
@@ -12,6 +26,33 @@
   .nav {
     display: none;
   }
+  /* =======================================
+            Products page
+    ======================================== */
+  .sustainability-bg {
+    padding: 120px 0;
+  }
+  .sustainability .secondary-heading {
+    line-height: 40px;
+    margin: 10px 0;
+  }
+  .sustainability .hero-section .body-text {
+    padding-left: 0px;
+  }
+  .our-communities .grid {
+    gap: 40px;
+  }
+  .banking-practice {
+    width: 100%;
+  }
+  .responsible-banking-practice {
+    padding: 80px 0;
+  }
+
+  .our-communities .grid-image {
+    order: -1;
+  }
+
   /* ====================================
            Contact Page
     ======================================= */
@@ -45,18 +86,31 @@
   /* ====================================
             common css
     ======================================= */
+  img {
+    width: 100%;
+  }
+  .grid {
+    gap: 40px;
+  }
   .container {
     width: 90%;
+    padding: 0;
   }
   .primary-heading {
-    font-size: 56px;
+    font-size: 52px;
     line-height: 40px;
+  }
+  .secondary-heading {
+    font-size: 34px;
   }
   .hero-section {
     text-align: center;
   }
   .flex-end {
     justify-content: center;
+  }
+  .grid-cols-2 {
+    grid-template-columns: 1fr;
   }
   /* =======================================
             Header section
@@ -69,6 +123,38 @@
   }
   .logo a {
     font-size: 26px;
+  }
+  /* =======================================
+            Products page
+    ======================================== */
+  .sustainability-bg {
+    padding: 120px 0;
+  }
+  .sustainability .secondary-heading {
+    line-height: 40px;
+    margin: 10px 0;
+  }
+  .sustainability .hero-section .body-text {
+    padding-left: 0px;
+  }
+  .our-communities .responsible-banking-content {
+    order: 1;
+  }
+  .responsible-banking-practice {
+    padding: 80px 0;
+  }
+  .responsible-banking-practice .secondary-heading {
+    font-size: 32px;
+  }
+  .banking-practice {
+    width: 100%;
+  }
+  .unlock-section {
+    padding: 80px 0;
+  }
+  .unlock-section-content .secondary-heading {
+    padding-right: 0px;
+    font-size: 36px;
   }
 
   /* =======================================
