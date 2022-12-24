@@ -34,3 +34,12 @@ function openCurrAccordion(e) {
 		}
 	}
 }
+
+// Current year copy right
+const currentYear = document.getElementById('currentYear').innerText = new Date().getFullYear()
+
+// Hamburger
+document.querySelector('.hamburger').addEventListener('click', (e) => {
+	e.currentTarget.classList.toggle('is-active');
+	document.querySelector('.nav').classList.toggle('is-active');
+})

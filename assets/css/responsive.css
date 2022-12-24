@@ -29,18 +29,175 @@
   .grid-cols-2 {
     grid-template-columns: 1fr;
   }
+
+  /* =======================================
+            Footer section
+    ======================================== */
+  .footer-section {
+    padding: 80px 0;
+  }
+  .footer-section .grid {
+    gap: 60px;
+  }
+  .footer-section .flex {
+    gap: 20px;
+    flex-direction: column;
+  }
+  .footer-section .copyright {
+    text-align: center;
+    font-size: 13px;
+  }
+  .footer-section .copyright .border-line {
+    width: 100%;
+    order: -1;
+  }
   /* =======================================
             Header section
     ======================================== */
   header.header-section {
-    padding: 15px 0;
+    padding: 5px 0;
+    position: relative;
   }
-  .nav {
+  nav.nav{
     display: none;
   }
   .logo a {
     font-size: 26px;
   }
+  nav.nav.is-active{
+    content: "";
+    display: block;
+    position: absolute;
+    height: 100vh;
+    width: 80%;
+    background-color: #810303;
+    top: 0;
+    left: 0;
+    padding: 45px 20px 10px;
+    transition: all 3s ease-in;
+  }
+  nav.nav.is-active ul{
+    flex-direction: column;
+    gap: 25px;
+  }
+  nav.nav.is-active ul li a{
+    color: #fff;
+  }
+
+  .hamburger {
+    padding: 15px;
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    background-color: transparent;
+  }
+  .hamburger__container {
+    width: 32px;
+    height: 24px;
+    position: relative;
+  }
+  .hamburger:hover .hamburger__inner {
+    transform: translate(-51px, 50%);
+    opacity: 0;
+  }
+  .hamburger:hover .hamburger__inner::before,
+  .hamburger:hover .hamburger__inner::after {
+    transform: translate(102px, 0);
+    opacity: 0;
+  }
+  .hamburger.is-active .hamburger__inner {
+    display: none;
+  }
+
+
+  .hamburger__inner {
+    width: 100%;
+    height: 2px;
+    background-color: #D21E2B;
+    border-radius: 4px;
+    position: absolute;
+    transition-property: transform, opacity;
+    transition-timing-function: ease;
+    transition-duration: 0.4s;
+    top: 50%;
+    transform: translate(5px, -50%);
+    opacity: 1;
+  }
+  .hamburger__inner::before,
+  .hamburger__inner::after {
+    width: 100%;
+    height: 2px;
+    background-color: #D21E2B;
+    border-radius: 4px;
+    position: absolute;
+    transition-property: transform, opacity;
+    transition-timing-function: ease;
+    transition-duration: 0.4s;
+    content: "";
+    opacity: 1;
+    transform: translate(-5px, 0);
+  }
+  .hamburger__inner::before {
+    top: -13px;
+  }
+  .hamburger__inner::after {
+    top: 13px;
+  }
+  .hamburger:hover .hamburger__hidden {
+    opacity: 1;
+    transform: translate(0, -50%);
+  }
+  .hamburger:hover .hamburger__hidden::before,
+  .hamburger:hover .hamburger__hidden::after {
+    opacity: 1;
+    transform: translate(0, 0) ;
+  }
+  .hamburger.is-active .hamburger__hidden {
+    opacity: 1;
+    transform: rotate(45deg);
+  }
+  .hamburger.is-active .hamburger__hidden::before {
+    transform: translate(0 , 13px) rotate(90deg);
+    transform-origin: center;
+  }
+  .hamburger.is-active .hamburger__hidden::after {
+    transform-origin: center;
+    transform: translate(0, -13px) rotate(90deg);
+  }
+  .hamburger__hidden {
+    opacity: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #D21E2B;
+    border-radius: 4px;
+    position: absolute;
+    transition-property: transform, opacity;
+    transition-timing-function: ease;
+    transition-duration: 0.4s;
+    top: 50%;
+    transform: translate(51px - 50%);
+  }
+  .hamburger__hidden::before,
+  .hamburger__hidden::after {
+    width: 100%;
+    height: 2px;
+    background-color: #D21E2B;
+    border-radius: 4px;
+    position: absolute;
+    transition-property: transform, opacity;
+    transition-timing-function: ease;
+    transition-duration: 0.4s;
+    background-color: #D21E2B;
+    content: "";
+    transform: translate(102px);
+  }
+  .hamburger__hidden::before {
+    top: -13px;
+  }
+  .hamburger__hidden::after {
+    top: 13px;
+  }
+
   /* =======================================
             Products page
     ======================================== */
@@ -180,6 +337,164 @@
     ======================================= */
   .nav {
     display: none;
+  }
+  header.header-section {
+    padding: 10px 0;
+  }
+  
+  nav.nav.is-active{
+    content: "";
+    display: block;
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    background-color: #810303;
+    opacity: 0.8;
+    top: 73px;
+    left: 0;
+    padding: 30px 40px 20px;
+  }
+  nav.nav.is-active ul{
+    flex-direction: column;
+  }
+  nav.nav.is-active ul li a{
+    color: #fff;
+  }
+  .hamburger {
+    padding: 15px;
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    background-color: transparent;
+    margin-right: -15px;
+  }
+  .hamburger__container {
+    width: 36px;
+    height: 24px;
+    position: relative;
+  }
+  .hamburger:hover .hamburger__inner {
+    transform: translate(-51px, 50%);
+    opacity: 0;
+  }
+  .hamburger:hover .hamburger__inner::before,
+  .hamburger:hover .hamburger__inner::after {
+    transform: translate(102px);
+    opacity: 0;
+  }
+  .hamburger.is-active .hamburger__inner {
+    display: none;
+  }
+  .hamburger__inner {
+    width: 100%;
+    height: 2px;
+    background-color: #D21E2B;
+    border-radius: 4px;
+    position: absolute;
+    transition-property: transform, opacity;
+    transition-timing-function: ease;
+    transition-duration: 0.4s;
+    top: 50%;
+    transform: translate(5px, -50%);
+    opacity: 1;
+  }
+  .hamburger__inner::before,
+  .hamburger__inner::after {
+    width: 100%;
+    height: 2px;
+    background-color: #D21E2B;
+    border-radius: 4px;
+    position: absolute;
+    transition-property: transform, opacity;
+    transition-timing-function: ease;
+    transition-duration: 0.4s;
+    content: "";
+    opacity: 1;
+    transform: translate(-5px, 0);
+  }
+  .hamburger__inner::before {
+    top: -13px;
+  }
+  .hamburger__inner::after {
+    top: 13px;
+  }
+  .hamburger:hover .hamburger__hidden {
+    opacity: 1;
+    transform: translate(0, -50%);
+  }
+  .hamburger:hover .hamburger__hidden::before,
+  .hamburger:hover .hamburger__hidden::after {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+  .hamburger.is-active .hamburger__hidden {
+    opacity: 1;
+    transform: rotate(45deg);
+  }
+  .hamburger.is-active .hamburger__hidden::before {
+    transform: translate(0 , 13px) rotate(90deg);
+    transform-origin: center;
+  }
+  .hamburger.is-active .hamburger__hidden::after {
+    transform-origin: center;
+    transform: translate(0, -13px) rotate(90deg);
+  }
+  .hamburger__hidden {
+    opacity: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #D21E2B;
+    border-radius: 4px;
+    position: absolute;
+    transition-property: transform, opacity;
+    transition-timing-function: ease;
+    transition-duration: 0.4s;
+    background-color: #D21E2B;
+    top: 50%;
+    transform: translate(51px - 50%);
+  }
+  .hamburger__hidden::before,
+  .hamburger__hidden::after {
+    width: 100%;
+    height: 2px;
+    background-color: #D21E2B;
+    border-radius: 4px;
+    position: absolute;
+    transition-property: transform, opacity;
+    transition-timing-function: ease;
+    transition-duration: 0.4s;
+    background-color: #D21E2B;
+    content: "";
+    transform: translate(102px);
+  }
+  .hamburger__hidden::before {
+    top: -13px;
+  }
+  .hamburger__hidden::after {
+    top: 13px;
+  }
+
+  /* =======================================
+            Footer section
+    ======================================== */
+  .footer-section {
+    padding: 80px 0;
+  }
+  .footer-section .grid {
+    gap: 160px;
+  }
+  .footer-section .grid-cols-2 {
+    grid-template-columns: 1fr 1fr;
+  }
+  .footer-section .flex {
+    gap: 20px;
+  }
+  .footer-section .copyright {
+    text-align: center;
+    font-size: 13px;
+  }
+  .footer-section .copyright .border-line {
+    width: 60%;
   }
   /* =======================================
             Products page
