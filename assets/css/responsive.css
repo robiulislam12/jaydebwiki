@@ -14,11 +14,14 @@
     padding: 0;
   }
   .primary-heading {
-    font-size: 52px;
-    line-height: 40px;
+    font-size: 44px;
+    line-height: 30px;
   }
   .secondary-heading {
-    font-size: 34px;
+    font-size: 30px;
+  }
+  .third-heading{
+    line-height: 34px;
   }
   .hero-section {
     text-align: center;
@@ -28,6 +31,10 @@
   }
   .grid-cols-2 {
     grid-template-columns: 1fr;
+  }
+
+  .breadcrumbs p, .breadcrumbs a{
+    font-size: 14px;
   }
 
   /* =======================================
@@ -74,7 +81,6 @@
     top: 0;
     left: 0;
     padding: 45px 20px 10px;
-    transition: all 3s ease-in;
   }
   nav.nav.is-active ul{
     flex-direction: column;
@@ -204,12 +210,15 @@
   .sustainability-bg {
     padding: 120px 0;
   }
-  .sustainability .secondary-heading {
-    line-height: 40px;
+  .sustainability .hero-section .secondary-heading {
+    line-height: 40px ;
     margin: 10px 0;
   }
   .sustainability .hero-section .body-text {
     padding-left: 0px;
+  }
+  .sustainability .breadcrumbs p, .sustainability .breadcrumbs a{
+    font-size: 14px;
   }
   .our-communities .responsible-banking-content {
     order: 1;
@@ -238,12 +247,16 @@
     padding: 120px 0;
   }
   .everything-ogbc .hero-section .primary-heading {
-    font-size: 52px;
-    line-height: 60px;
+    font-size: 34px;
+    line-height: 50px;
   }
   .everything-ogbc .hero-section .secondary-heading {
-    line-height: 40px;
-    font-size: 26px;
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .everything-ogbc .unlock-section .secondary-heading{
+    font-size: 28px;
+    line-height: 42px;
   }
   .everything-ogbc .hero-section .body-text {
     padding-left: 0px;
@@ -260,12 +273,12 @@
     padding: 100px 0;
   }
   .faqs .primary-heading {
-    font-size: 52px;
-    line-height: 70px;
+    font-size: 42px;
+    line-height: 60px;
   }
   .faqs .hero-section .secondary-heading {
-    line-height: 40px;
-    font-size: 26px;
+    line-height: 28px;
+    font-size: 18px;
   }
 
   /* =======================================
@@ -305,8 +318,8 @@
     gap: 0px;
   }
   .contact-text h2 {
-    font-size: 32px;
-    line-height: 41px;
+    font-size: 28px;
+    line-height: 42px;
   }
 }
 
@@ -347,12 +360,11 @@
     display: block;
     position: absolute;
     height: 100vh;
-    width: 100%;
+    width: 80%;
     background-color: #810303;
-    opacity: 0.8;
-    top: 73px;
+    top: 0px;
     left: 0;
-    padding: 30px 40px 20px;
+    padding: 40px 40px 20px;
   }
   nav.nav.is-active ul{
     flex-direction: column;
