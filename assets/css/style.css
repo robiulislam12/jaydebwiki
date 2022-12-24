@@ -317,10 +317,18 @@ a.active {
   font-size: 18px;
   line-height: 22px;
 }
+.accordion-section {
+  padding: 130px 0;
+}
+.clearfix {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
 
 .clearfix:after {
-  visibility: hidden;
-  display: block;
+  display: none;
   font-size: 0;
   content: " ";
   clear: both;
@@ -329,7 +337,7 @@ a.active {
 
 .dropdown-container {
   max-width: 1160px;
-  margin: 12px auto;
+  margin: 10px auto;
   background-color: white;
   color: #888;
   overflow: hidden;
@@ -341,25 +349,23 @@ a.active {
 
 .dropdown-container header {
   cursor: pointer;
-  padding: 30px 20px;
+  padding: 15px 20px;
   background-color: #810303;
   color: white;
   transition: background-color 350ms ease-in-out;
 }
 
-.dropdown-container.open header {
+/* .dropdown-container.open header {
   background-color: #d21e2b;
-}
+} */
 
 .dropdown-container h1 {
-  float: left;
   font-weight: 400;
   font-size: 36px;
   line-height: 24px;
 }
 
 .dropdown-container .expand {
-  float: right;
   font-size: 26px;
   transition: transform 0.35s ease-in-out;
 }
