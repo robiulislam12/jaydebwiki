@@ -20,7 +20,7 @@
   .secondary-heading {
     font-size: 30px;
   }
-  .third-heading{
+  .third-heading {
     line-height: 34px;
   }
   .hero-section {
@@ -33,7 +33,8 @@
     grid-template-columns: 1fr;
   }
 
-  .breadcrumbs p, .breadcrumbs a{
+  .breadcrumbs p,
+  .breadcrumbs a {
     font-size: 14px;
   }
 
@@ -65,13 +66,13 @@
     padding: 5px 0;
     position: relative;
   }
-  nav.nav{
+  nav.nav {
     display: none;
   }
   .logo a {
     font-size: 26px;
   }
-  nav.nav.is-active{
+  nav.nav.is-active {
     content: "";
     display: block;
     position: absolute;
@@ -82,11 +83,11 @@
     left: 0;
     padding: 45px 20px 10px;
   }
-  nav.nav.is-active ul{
+  nav.nav.is-active ul {
     flex-direction: column;
     gap: 25px;
   }
-  nav.nav.is-active ul li a{
+  nav.nav.is-active ul li a {
     color: #fff;
   }
 
@@ -115,11 +116,10 @@
     display: none;
   }
 
-
   .hamburger__inner {
     width: 100%;
     height: 2px;
-    background-color: #D21E2B;
+    background-color: #d21e2b;
     border-radius: 4px;
     position: absolute;
     transition-property: transform, opacity;
@@ -133,7 +133,7 @@
   .hamburger__inner::after {
     width: 100%;
     height: 2px;
-    background-color: #D21E2B;
+    background-color: #d21e2b;
     border-radius: 4px;
     position: absolute;
     transition-property: transform, opacity;
@@ -156,14 +156,14 @@
   .hamburger:hover .hamburger__hidden::before,
   .hamburger:hover .hamburger__hidden::after {
     opacity: 1;
-    transform: translate(0, 0) ;
+    transform: translate(0, 0);
   }
   .hamburger.is-active .hamburger__hidden {
     opacity: 1;
     transform: rotate(45deg);
   }
   .hamburger.is-active .hamburger__hidden::before {
-    transform: translate(0 , 13px) rotate(90deg);
+    transform: translate(0, 13px) rotate(90deg);
     transform-origin: center;
   }
   .hamburger.is-active .hamburger__hidden::after {
@@ -174,7 +174,7 @@
     opacity: 0;
     width: 100%;
     height: 2px;
-    background-color: #D21E2B;
+    background-color: #d21e2b;
     border-radius: 4px;
     position: absolute;
     transition-property: transform, opacity;
@@ -187,13 +187,13 @@
   .hamburger__hidden::after {
     width: 100%;
     height: 2px;
-    background-color: #D21E2B;
+    background-color: #d21e2b;
     border-radius: 4px;
     position: absolute;
     transition-property: transform, opacity;
     transition-timing-function: ease;
     transition-duration: 0.4s;
-    background-color: #D21E2B;
+    background-color: #d21e2b;
     content: "";
     transform: translate(102px);
   }
@@ -205,19 +205,105 @@
   }
 
   /* =======================================
+            Home page
+    ======================================== */
+  .home-page-hero-section-bg {
+    padding: 140px 0;
+  }
+  .home-page-hero-section-bg .primary-heading {
+    font-size: 36px;
+    line-height: 50px;
+  }
+  .home-page-hero-section-bg .secondary-heading {
+    font-size: 26px;
+    line-height: 40px;
+  }
+  .financial-wellness,
+  .people-first-section {
+    padding: 80px 0;
+  }
+  .financial-wellness .grid-image,
+  .people-first-section .grid-image {
+    order: -1;
+  }
+  .home-page-hero-section-bg .body-text {
+    padding-right: 0px;
+  }
+  .wealth-management-content .secondary-heading {
+    padding: 15px 0px 15px 20px;
+    line-height: 40px;
+    font-size: 28px;
+  }
+  .wealth-management-content .secondary-heading::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 110px;
+    top: 0;
+    left: 0;
+    background: #d21e2b;
+    border-radius: 2px;
+    z-index: -1;
+  }
+  .decade-fintech-content {
+    padding: 60px 0;
+    width: 100%;
+    text-align: center;
+  }
+  .decade-banking-section .secondary-heading, 
+  .dedicated-service-section .secondary-heading,
+  .thinking-ahead-section .secondary-heading {
+    padding: 0;
+    font-size: 31px;
+    line-height: 42px;
+  }
+  .dedicated-service-section .dedicated-service-content, .thinking-ahead-content {
+    padding: 30px 20px;
+  }
+  .dedicated-service-section .secondary-heading{
+    text-align: center;
+    padding-bottom: 30px;
+  }
+  .dedicated-service-section .secondary-heading::before {
+    left: 0%;
+    bottom: 0%;
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+    border-left: 40px solid #D21E2B;
+    transform: rotate(90deg);
+    margin-top: 100px;
+  }
+  .thinking-ahead-section .secondary-heading{
+    order: -1;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    text-align: center;
+  }
+  .thinking-ahead-section .secondary-heading::before{
+    left: 50%;
+    bottom: 0%;
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+    border-right: 40px solid #D21E2B;
+    transform: translate(-50%) rotate(270deg);
+    margin-top: 100px;
+  }
+
+  /* =======================================
             Products page
     ======================================== */
   .sustainability-bg {
     padding: 120px 0;
   }
   .sustainability .hero-section .secondary-heading {
-    line-height: 40px ;
+    line-height: 40px;
     margin: 10px 0;
   }
   .sustainability .hero-section .body-text {
     padding-left: 0px;
   }
-  .sustainability .breadcrumbs p, .sustainability .breadcrumbs a{
+  .sustainability .breadcrumbs p,
+  .sustainability .breadcrumbs a {
     font-size: 14px;
   }
   .our-communities .responsible-banking-content {
@@ -254,7 +340,7 @@
     font-size: 18px;
     line-height: 28px;
   }
-  .everything-ogbc .unlock-section .secondary-heading{
+  .everything-ogbc .unlock-section .secondary-heading {
     font-size: 28px;
     line-height: 42px;
   }
@@ -354,8 +440,8 @@
   header.header-section {
     padding: 10px 0;
   }
-  
-  nav.nav.is-active{
+
+  nav.nav.is-active {
     content: "";
     display: block;
     position: absolute;
@@ -366,10 +452,10 @@
     left: 0;
     padding: 40px 40px 20px;
   }
-  nav.nav.is-active ul{
+  nav.nav.is-active ul {
     flex-direction: column;
   }
-  nav.nav.is-active ul li a{
+  nav.nav.is-active ul li a {
     color: #fff;
   }
   .hamburger {
@@ -400,7 +486,7 @@
   .hamburger__inner {
     width: 100%;
     height: 2px;
-    background-color: #D21E2B;
+    background-color: #d21e2b;
     border-radius: 4px;
     position: absolute;
     transition-property: transform, opacity;
@@ -414,7 +500,7 @@
   .hamburger__inner::after {
     width: 100%;
     height: 2px;
-    background-color: #D21E2B;
+    background-color: #d21e2b;
     border-radius: 4px;
     position: absolute;
     transition-property: transform, opacity;
@@ -444,7 +530,7 @@
     transform: rotate(45deg);
   }
   .hamburger.is-active .hamburger__hidden::before {
-    transform: translate(0 , 13px) rotate(90deg);
+    transform: translate(0, 13px) rotate(90deg);
     transform-origin: center;
   }
   .hamburger.is-active .hamburger__hidden::after {
@@ -455,13 +541,13 @@
     opacity: 0;
     width: 100%;
     height: 2px;
-    background-color: #D21E2B;
+    background-color: #d21e2b;
     border-radius: 4px;
     position: absolute;
     transition-property: transform, opacity;
     transition-timing-function: ease;
     transition-duration: 0.4s;
-    background-color: #D21E2B;
+    background-color: #d21e2b;
     top: 50%;
     transform: translate(51px - 50%);
   }
@@ -469,13 +555,13 @@
   .hamburger__hidden::after {
     width: 100%;
     height: 2px;
-    background-color: #D21E2B;
+    background-color: #d21e2b;
     border-radius: 4px;
     position: absolute;
     transition-property: transform, opacity;
     transition-timing-function: ease;
     transition-duration: 0.4s;
-    background-color: #D21E2B;
+    background-color: #d21e2b;
     content: "";
     transform: translate(102px);
   }
@@ -508,6 +594,49 @@
   .footer-section .copyright .border-line {
     width: 60%;
   }
+  /* =======================================
+            Home page
+    ======================================== */
+    .home-page-hero-section-bg .body-text {
+      padding-right: 0px;
+    }
+    .home-page-hero-section-bg {
+      padding: 120px 0;
+    }
+    .home-page-hero-section-bg .primary-heading {
+      font-size: 45px;
+      line-height: 70px;
+    }
+    .decade-fintech-content .secondary-heading{
+      padding: 0;
+    }
+    .dedicated-service-section .secondary-heading{
+      text-align: center;
+      padding: 0;
+    }
+    .dedicated-service-section .secondary-heading::before {
+      left: 0%;
+      bottom: 0%;
+      border-top: 30px solid transparent;
+      border-bottom: 30px solid transparent;
+      border-left: 40px solid #D21E2B;
+      transform: rotate(90deg);
+      margin-top: 100px;
+    }
+    .thinking-ahead-section .secondary-heading{
+      order: -1;
+      padding-top: 60px;
+      text-align: center;
+    }
+    .thinking-ahead-section .secondary-heading::before{
+      left: 50%;
+      bottom: 0%;
+      border-top: 30px solid transparent;
+      border-bottom: 30px solid transparent;
+      border-right: 40px solid #D21E2B;
+      transform: translate(-50%) rotate(270deg);
+      margin-top: 130px;
+    }
   /* =======================================
             Products page
     ======================================== */

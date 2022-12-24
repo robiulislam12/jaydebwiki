@@ -289,8 +289,114 @@ a.active {
   line-height: 28px;
   padding-right: 710px;
 }
-.home-page-hero-section-bg .btn{
+.home-page-hero-section-bg .btn {
   margin-top: 20px;
+}
+.financial-wellness,
+.people-first-section {
+  padding: 120px 0;
+  background-color: #f9f9f9;
+}
+.home .financial-wellness-content .btn,
+.home .people-first-section .btn,
+.wealth-management-section .btn {
+  margin-top: 30px;
+}
+.wealth-management-section {
+  padding: 120px 0;
+}
+.wealth-management-content .secondary-heading {
+  line-height: 63px;
+  position: relative;
+  padding: 25px 80px 25px 40px;
+}
+.wealth-management-content .secondary-heading::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 193px;
+  top: 0;
+  left: 0;
+  background: #d21e2b;
+  border-radius: 2px;
+  z-index: -1;
+}
+.decade-banking-section {
+  background-image: url("/assets/images/decade-fintech-img.png");
+  background-position: bottom center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.decade-fintech-content {
+  padding: 80px 0;
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+.decade-banking-section .secondary-heading {
+  padding: 0 200px;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 63px;
+}
+.decade-banking-section .decade-fintech-content .border-line {
+  margin: 20px auto 50px;
+}
+.decade-banking-section .decade-fintech-content .btn {
+  margin-top: 30px;
+}
+.dedicated-service-section {
+  padding-top: 70px;
+}
+.dedicated-service-section .secondary-heading, .thinking-ahead-section .secondary-heading {
+  text-align: right;
+  font-size: 48px;
+  line-height: 63px;
+  padding-right: 80px;
+  position: relative;
+}
+
+.dedicated-service-section .secondary-heading::before {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  margin: 30px auto;
+  top: 30px;
+  right: 0;
+  border-top: 40px solid transparent;
+  border-bottom: 40px solid transparent;
+  border-left: 50px solid #D21E2B;
+  transform: translateY(-30px);
+}
+.dedicated-service-section .dedicated-service-content, .thinking-ahead-content {
+  background: #f9f9f9;
+  box-shadow: 0px 4px 20px 8px rgba(0, 0, 0, 0.14);
+  border-radius: 28px;
+  padding: 100px 56px;
+  text-align: center;
+}
+.thinking-ahead-section{
+  padding-bottom: 70px;
+}
+.thinking-ahead-section .secondary-heading{
+  text-align: left;
+  padding-left: 80px;
+  position: relative;
+}
+.thinking-ahead-section .secondary-heading::before {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  margin: 30px auto;
+  top: 60px;
+  left: 0;
+  border-top: 40px solid transparent;
+  border-bottom: 40px solid transparent;
+  border-right: 50px solid #D21E2B;
+  transform: translateY(-60px);
 }
 /*--------------------------------------------
             Products page
