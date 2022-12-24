@@ -250,17 +250,18 @@
     width: 100%;
     text-align: center;
   }
-  .decade-banking-section .secondary-heading, 
+  .decade-banking-section .secondary-heading,
   .dedicated-service-section .secondary-heading,
   .thinking-ahead-section .secondary-heading {
     padding: 0;
     font-size: 31px;
     line-height: 42px;
   }
-  .dedicated-service-section .dedicated-service-content, .thinking-ahead-content {
+  .dedicated-service-section .dedicated-service-content,
+  .thinking-ahead-content {
     padding: 30px 20px;
   }
-  .dedicated-service-section .secondary-heading{
+  .dedicated-service-section .secondary-heading {
     text-align: center;
     padding-bottom: 30px;
   }
@@ -269,24 +270,74 @@
     bottom: 0%;
     border-top: 30px solid transparent;
     border-bottom: 30px solid transparent;
-    border-left: 40px solid #D21E2B;
+    border-left: 40px solid #d21e2b;
     transform: rotate(90deg);
     margin-top: 100px;
   }
-  .thinking-ahead-section .secondary-heading{
+  .thinking-ahead-section .secondary-heading {
     order: -1;
     padding-top: 60px;
     padding-bottom: 60px;
     text-align: center;
   }
-  .thinking-ahead-section .secondary-heading::before{
+  .thinking-ahead-section .secondary-heading::before {
     left: 50%;
     bottom: 0%;
     border-top: 30px solid transparent;
     border-bottom: 30px solid transparent;
-    border-right: 40px solid #D21E2B;
+    border-right: 40px solid #d21e2b;
     transform: translate(-50%) rotate(270deg);
     margin-top: 100px;
+  }
+  /*--------------------------------------------
+            About page
+----------------------------------------------*/
+  .about-bg {
+    padding: 120px 0;
+  }
+  .about .hero-section .secondary-heading {
+    line-height: 40px;
+    margin: 15px 0;
+    font-size: 18px;
+  }
+  .about .hero-section .body-text {
+    padding-left: 0px;
+  }
+  /*--------------------------------------------
+          Services page
+----------------------------------------------*/
+  .services-bg {
+    padding: 120px 0;
+  }
+  .services .hero-section .primary-heading {
+    line-height: 50px;
+  }
+  .services .hero-section .secondary-heading {
+    line-height: 34px;
+    font-size: 18px;
+    margin: 15px 0;
+  }
+  .services .hero-section .body-text {
+    padding-left: 0px;
+  }
+  .services .checking-account-section .secondary-heading {
+    padding: 0;
+    line-height: 34px;
+    font-size: 28px;
+  }
+  .services .checking-account-section .body-text {
+    padding: 0;
+    margin: 20px 0;
+  }
+  .services .checking-account-section .grid {
+    gap: 30px;
+  }
+  .services .checking-account-section .grid div {
+    border-radius: 18px;
+    padding: 30px 20px;
+  }
+  .services .checking-account-section .grid div .third-heading {
+    font-size: 24px;
   }
 
   /* =======================================
@@ -597,46 +648,87 @@
   /* =======================================
             Home page
     ======================================== */
-    .home-page-hero-section-bg .body-text {
-      padding-right: 0px;
-    }
-    .home-page-hero-section-bg {
-      padding: 120px 0;
-    }
-    .home-page-hero-section-bg .primary-heading {
-      font-size: 45px;
-      line-height: 70px;
-    }
-    .decade-fintech-content .secondary-heading{
-      padding: 0;
-    }
-    .dedicated-service-section .secondary-heading{
-      text-align: center;
-      padding: 0;
-    }
-    .dedicated-service-section .secondary-heading::before {
-      left: 0%;
-      bottom: 0%;
-      border-top: 30px solid transparent;
-      border-bottom: 30px solid transparent;
-      border-left: 40px solid #D21E2B;
-      transform: rotate(90deg);
-      margin-top: 100px;
-    }
-    .thinking-ahead-section .secondary-heading{
-      order: -1;
-      padding-top: 60px;
-      text-align: center;
-    }
-    .thinking-ahead-section .secondary-heading::before{
-      left: 50%;
-      bottom: 0%;
-      border-top: 30px solid transparent;
-      border-bottom: 30px solid transparent;
-      border-right: 40px solid #D21E2B;
-      transform: translate(-50%) rotate(270deg);
-      margin-top: 130px;
-    }
+  .home-page-hero-section-bg .body-text {
+    padding-right: 0px;
+  }
+  .home-page-hero-section-bg {
+    padding: 120px 0;
+  }
+  .home-page-hero-section-bg .primary-heading {
+    font-size: 45px;
+    line-height: 70px;
+  }
+  .decade-fintech-content .secondary-heading {
+    padding: 0;
+  }
+  .dedicated-service-section .secondary-heading {
+    text-align: center;
+    padding: 0;
+  }
+  .dedicated-service-section .secondary-heading::before {
+    left: 0%;
+    bottom: 0%;
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+    border-left: 40px solid #d21e2b;
+    transform: rotate(90deg);
+    margin-top: 100px;
+  }
+  .thinking-ahead-section .secondary-heading {
+    order: -1;
+    padding-top: 60px;
+    text-align: center;
+  }
+  .thinking-ahead-section .secondary-heading::before {
+    left: 50%;
+    bottom: 0%;
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+    border-right: 40px solid #d21e2b;
+    transform: translate(-50%) rotate(270deg);
+    margin-top: 130px;
+  }
+  /*--------------------------------------------
+            About page
+----------------------------------------------*/
+  .about-bg {
+    padding: 150px 0;
+  }
+  .about .hero-section .secondary-heading {
+    color: #ffffff;
+    line-height: 60px;
+  }
+  .about .hero-section .body-text {
+    color: #ffffffb2;
+    padding-left: 80px;
+  }
+  /*--------------------------------------------
+            Services page
+----------------------------------------------*/
+  .services-bg {
+    padding: 150px 0;
+  }
+  .services .hero-section .secondary-heading {
+    color: #ffffff;
+    line-height: 60px;
+    font-size: 28px;
+  }
+  .services .hero-section .body-text {
+    color: #ffffffb2;
+    padding-left: 80px;
+  }
+  .services .checking-account-section .secondary-heading {
+    padding: 0;
+    line-height: 44px;
+    font-size: 38px;
+  }
+  .services .checking-account-section .body-text {
+    padding: 0;
+    margin: 20px 0;
+  }
+  .services .checking-account-section .grid {
+    gap: 30px;
+  }
   /* =======================================
             Products page
     ======================================== */

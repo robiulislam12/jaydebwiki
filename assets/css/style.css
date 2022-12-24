@@ -349,7 +349,8 @@ a.active {
 .dedicated-service-section {
   padding-top: 70px;
 }
-.dedicated-service-section .secondary-heading, .thinking-ahead-section .secondary-heading {
+.dedicated-service-section .secondary-heading,
+.thinking-ahead-section .secondary-heading {
   text-align: right;
   font-size: 48px;
   line-height: 63px;
@@ -367,20 +368,21 @@ a.active {
   right: 0;
   border-top: 40px solid transparent;
   border-bottom: 40px solid transparent;
-  border-left: 50px solid #D21E2B;
+  border-left: 50px solid #d21e2b;
   transform: translateY(-30px);
 }
-.dedicated-service-section .dedicated-service-content, .thinking-ahead-content {
+.dedicated-service-section .dedicated-service-content,
+.thinking-ahead-content {
   background: #f9f9f9;
   box-shadow: 0px 4px 20px 8px rgba(0, 0, 0, 0.14);
   border-radius: 28px;
   padding: 100px 56px;
   text-align: center;
 }
-.thinking-ahead-section{
+.thinking-ahead-section {
   padding-bottom: 70px;
 }
-.thinking-ahead-section .secondary-heading{
+.thinking-ahead-section .secondary-heading {
   text-align: left;
   padding-left: 80px;
   position: relative;
@@ -395,8 +397,104 @@ a.active {
   left: 0;
   border-top: 40px solid transparent;
   border-bottom: 40px solid transparent;
-  border-right: 50px solid #D21E2B;
+  border-right: 50px solid #d21e2b;
   transform: translateY(-60px);
+}
+/*--------------------------------------------
+            About page
+----------------------------------------------*/
+.about-bg {
+  background-image: url("/assets/images/about-page-bg.png");
+  background-position: bottom center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 170px 0;
+}
+.about .hero-section .secondary-heading {
+  color: #ffffff;
+  line-height: 70px;
+}
+.about .hero-section .body-text {
+  color: #ffffffb2;
+  padding-left: 690px;
+}
+.about .benefit-with-us-section {
+  background-image: url("/assets/images/baking-with-us.png");
+  background-color: #360202;
+  padding: 100px 0;
+}
+.about .benefit-with-us-section .grid {
+  align-items: flex-start;
+}
+.about .benefit-with-us-section .secondary-heading,
+.about .benefit-with-us-section .body-text {
+  color: #fff;
+}
+
+/*--------------------------------------------
+            Services page
+----------------------------------------------*/
+.services-bg {
+  background-image: url("/assets/images/services-page-bg.png");
+  background-position: bottom center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 170px 0;
+}
+.services .hero-section .secondary-heading {
+  color: #ffffff;
+  line-height: 70px;
+}
+.services .hero-section .body-text {
+  color: #ffffffb2;
+  padding-left: 610px;
+}
+.services .checking-account-section {
+  padding: 60px 0 70px;
+  text-align: center;
+}
+.services .checking-account-section .secondary-heading {
+  padding: 0 280px;
+  line-height: 63px;
+}
+.services .checking-account-section .body-text {
+  padding: 0 80px;
+  margin: 30px 0;
+}
+.services .checking-account-section .grid .body-text {
+  padding: 0;
+  margin: 20px;
+}
+.services .checking-account-section .grid {
+  gap: 60px;
+  align-items: stretch;
+}
+.services .checking-account-section .grid div {
+  background: #f9f9f9;
+  box-shadow: 0px 4px 20px 8px rgba(0, 0, 0, 0.14);
+  border-radius: 28px;
+  padding: 40px 50px;
+  margin-top: 40px;
+}
+.services .checking-account-section .border-line {
+  margin: 20px auto;
+}
+.services .fintech-saving-section {
+  background-image: url("/assets/images/fintech-saving-account.png");
+  padding: 100px 0;
+}
+.services .fintech-loans-section {
+  background-image: url("/assets/images/fintech-loans.png");
+  padding: 80px 0;
+  background-color: #360202;
+}
+.services .fintech-loans-section .secondary-heading,
+.services .fintech-loans-section .body-text {
+  color: #fff;
+  font-family: "Fira Sans", sans-serif;
+}
+.services .fintech-loans-section .grid {
+  gap: 20px;
 }
 /*--------------------------------------------
             Products page
