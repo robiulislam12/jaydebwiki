@@ -430,6 +430,27 @@ a.active {
 .about .benefit-with-us-section .body-text {
   color: #fff;
 }
+.fintech-banking-purpose-section {
+  padding: 90px 0;
+}
+.fintech-banking-purpose-section .secondary-heading {
+  font-size: 46px;
+  line-height: 63px;
+  position: relative;
+  padding: 25px 0px 25px 20px;
+}
+.fintech-banking-purpose-section .secondary-heading::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 0 solid transparent;
+  border-bottom-width: 190px;
+  border-top-width: 0px;
+  border-left: 235px solid #D21E2B;
+  z-index: -1;
+  left: 0px;
+}
 
 /*--------------------------------------------
             Services page
@@ -495,6 +516,57 @@ a.active {
 }
 .services .fintech-loans-section .grid {
   gap: 20px;
+}
+.services .fintech-banking-credit-card-section {
+  padding: 96px 0;
+}
+.services .fintech-banking-credit-card-section .fintech-banking-items {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  align-items: stretch;
+}
+.services .fintech-banking-credit-card-section .fintech-banking-item {
+  background: #ffffff;
+  border: 1px solid #ececec;
+  box-shadow: 0px 10px 30px rgba(50, 50, 50, 0.16);
+  border-radius: 5px;
+  margin-top: 50px;
+}
+.services
+  .fintech-banking-credit-card-section
+  .fintech-banking-item
+  .fintech-baking-item-content {
+  padding: 15px 25px;
+}
+.services .fintech-banking-credit-card-section .sub-body {
+  padding: 0px 200px;
+  text-align: center;
+}
+.services .fintech-banking-credit-card-section .fintech-banking-item img {
+  width: 100%;
+  border-radius: 5px 5px 0 0;
+}
+.services .fintech-banking-credit-card-section .secondary-heading {
+  text-align: center;
+}
+.services .fintech-banking-credit-card-section .forth-heading {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 10px;
+}
+.services .fintech-banking-credit-card-section .forth-heading::before {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  top: 50%;
+  left: 0;
+  border-radius: 50%;
+  transform: translateY(-50%);
+}
+.services .fintech-banking-credit-card-section .border-line {
+  margin: 30px auto;
 }
 /*--------------------------------------------
             Products page

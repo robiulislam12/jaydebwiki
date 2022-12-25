@@ -303,6 +303,15 @@
   .about .hero-section .body-text {
     padding-left: 0px;
   }
+  .fintech-banking-purpose-section {
+    padding: 60px 0;
+  }
+  .fintech-banking-purpose-section .secondary-heading {
+    font-size: 28px;
+    line-height: 43px;
+    position: relative;
+    padding: 25px 0px 25px 20px;
+  }
   /*--------------------------------------------
           Services page
 ----------------------------------------------*/
@@ -338,6 +347,16 @@
   }
   .services .checking-account-section .grid div .third-heading {
     font-size: 24px;
+  }
+  .services .fintech-banking-credit-card-section {
+    padding: 60px 0;
+  }
+  .services .fintech-banking-credit-card-section .fintech-banking-items {
+    grid-template-columns: 1fr;
+    gap: 0px;
+  }
+  .services .fintech-banking-credit-card-section .sub-body {
+    padding: 0px;
   }
 
   /* =======================================
@@ -702,6 +721,9 @@
     color: #ffffffb2;
     padding-left: 80px;
   }
+  .fintech-banking-purpose-section {
+    padding: 60px 0;
+  }
   /*--------------------------------------------
             Services page
 ----------------------------------------------*/
@@ -728,6 +750,16 @@
   }
   .services .checking-account-section .grid {
     gap: 30px;
+  }
+    .services .fintech-banking-credit-card-section {
+    padding: 60px 0;
+  }
+  .services .fintech-banking-credit-card-section .fintech-banking-items {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  .services .fintech-banking-credit-card-section .sub-body {
+    padding: 0px;
   }
   /* =======================================
             Products page
