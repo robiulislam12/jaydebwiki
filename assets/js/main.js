@@ -43,3 +43,8 @@ document.querySelector('.hamburger').addEventListener('click', (e) => {
 	e.currentTarget.classList.toggle('is-active');
 	document.querySelector('.nav').classList.toggle('is-active');
 })
+
+// AOS Animation 
+AOS.init({
+	duration: 1000,
+});
